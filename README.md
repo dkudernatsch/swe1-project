@@ -39,6 +39,15 @@ Clonen Sie das Template in ein Verzeichnis Ihrer Wahl und ändern Sie anschließ
 	git remote set-url origin https://if00x000@inf-swe-git.technikum-wien.at/r/~if00x000/BIF-WS??-SWE1.git
     git push origin master
 
+Alternativ können Sie dieses Script ausführen:
+
+https://inf-swe-git.technikum-wien.at/raw/BIF/SWE1-Java.git/master/clone-bif-swe1-java-tempate.sh
+
+Starten Sie das Script mit git-Bash oder Bash und befolgen Sie die Anweisungen
+
+    ./clone-bif-swe1-java-tempate.sh
+
+
 Implementierung
 ---------------
 Im Verzeichnis "Übungen" finden Sie für jede Abgabe eine Implementierung des jeweiligen Übungsinterface. Die Dokumentation finden Sie an dem Interface selbst.
