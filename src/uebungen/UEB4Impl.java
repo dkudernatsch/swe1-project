@@ -10,24 +10,22 @@ import BIF.SWE1.interfaces.UEB4;
 public class UEB4Impl implements UEB4 {
 
 	@Override
-	public void HelloWorld() {
+	public void helloWorld() {
+
 	}
 
 	@Override
-	public PluginManager GetPluginManager() {
-		// TODO Auto-generated method stub
+	public Request getRequest(InputStream inputStream) {
 		return null;
 	}
 
 	@Override
-	public Request GetRequest(InputStream arg0) {
-		// TODO Auto-generated method stub
+	public Response getResponse() {
 		return null;
 	}
 
 	@Override
-	public Response GetResponse() {
-		// TODO Auto-generated method stub
+	public PluginManager getPluginManager() {
 		return null;
 	}
 }

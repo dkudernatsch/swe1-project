@@ -2,6 +2,7 @@ package uebungen;
 
 import java.io.InputStream;
 
+import BIF.SWE1.interfaces.Plugin;
 import BIF.SWE1.interfaces.PluginManager;
 import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.UEB5;
@@ -9,18 +10,32 @@ import BIF.SWE1.interfaces.UEB5;
 public class UEB5Impl implements UEB5 {
 
 	@Override
-	public void HelloWorld() {
+	public void helloWorld() {
+
 	}
 
 	@Override
-	public PluginManager GetPluginManager() {
-		// TODO Auto-generated method stub
+	public Request getRequest(InputStream inputStream) {
 		return null;
 	}
 
 	@Override
-	public Request GetRequest(InputStream arg0) {
-		// TODO Auto-generated method stub
+	public PluginManager getPluginManager() {
+		return null;
+	}
+
+	@Override
+	public Plugin getStaticFilePlugin() {
+		return null;
+	}
+
+	@Override
+	public void setStatiFileFolder(String s) {
+
+	}
+
+	@Override
+	public String getStaticFileUrl(String s) {
 		return null;
 	}
 }

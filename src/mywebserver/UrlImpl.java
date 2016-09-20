@@ -29,20 +29,18 @@ public class UrlImpl implements Url {
 	}
 
 	@Override
-	public String geExtension() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public String geFragment() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public String getFileName() {
 		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getExtension() {
+		return null;
+	}
+
+	@Override
+	public String getFragment() {
 		return null;
 	}
 
@@ -50,6 +48,11 @@ public class UrlImpl implements Url {
 	public Map<String, String> getParameter() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public int getParameterCount() {
+		return 0;
 	}
 
 	@Override

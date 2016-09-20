@@ -10,24 +10,22 @@ import BIF.SWE1.interfaces.UEB3;
 public class UEB3Impl implements UEB3 {
 
 	@Override
-	public void HelloWorld() {
+	public void helloWorld() {
+
 	}
 
 	@Override
-	public Request GetRequest(InputStream arg0) {
-		// TODO Auto-generated method stub
+	public Request getRequest(InputStream inputStream) {
 		return null;
 	}
 
 	@Override
-	public Response GetResponse() {
-		// TODO Auto-generated method stub
+	public Response getResponse() {
 		return null;
 	}
 
 	@Override
-	public Plugin GetTestPlugin() {
-		// TODO Auto-generated method stub
+	public Plugin getTestPlugin() {
 		return null;
 	}
 }
