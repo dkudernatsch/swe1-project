@@ -1,4 +1,6 @@
-﻿BIF/SWE 1 My WebServer
+﻿#Daniel Kudernatsch
+
+BIF/SWE 1 My WebServer
 ======================
 
 Java Template für das Übungsbeispiel "WebServer". Damit die Übung erfolgreich abgegeben werden kann müssen folgende Kriterien erfüllt sein:
