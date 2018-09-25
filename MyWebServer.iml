@@ -21,6 +21,20 @@
           <root url="jar://$MODULE_DIR$/libs/BIF-SWE1-Interfaces.jar!/" />
         </CLASSES>
         <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.Interfaces/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="JUnit5.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/junit-jupiter-api-5.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/apiguardian-api-1.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/opentest4j-1.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/junit-platform-commons-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>

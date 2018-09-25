@@ -5,13 +5,13 @@
       <change afterPath="$PROJECT_DIR$/src/mywebserver/util/parser/ParseResult.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/mywebserver/util/parser/Parser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/mywebserver/web/url/ProtocolParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mywebserver/web/url/SimpleRegexParser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/mywebserver/web/url/UrlImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/mywebserver/web/url/UrlParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mywebserver/web/url/UserParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/mywebserver/web/url/TestHostUrlParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyWebServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyWebServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mywebserver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mywebserver/Main.java" afterDir="false" />
     </list>
     <ignored path="MyWebServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,131 +31,114 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="UEB1Impl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uebungen/UEB1Impl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UEB5Impl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uebungen/UEB5Impl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <element signature="e#343#344#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UEB6Impl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uebungen/UEB6Impl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UrlImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mywebserver/UrlImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/UrlImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="-132">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrlParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/UrlParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/UserParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractTestFixture.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/AbstractTestFixture.java">
+      <file leaf-file-name="TestHostUrlParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/mywebserver/web/url/TestHostUrlParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="480">
+              <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/RequestHelper.java">
+      <file leaf-file-name="ProtocolParser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/ProtocolParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="224">
+              <caret line="11" column="72" lean-forward="true" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+              <folding>
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleRegexParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/SimpleRegexParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BIF-SWE1.UnitTests.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/BIF-SWE1.UnitTests.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="UEB1Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB1Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="64">
+              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/UrlImpl.java">
+      <file leaf-file-name="ant builder.launch" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/.externalToolBuilders/ant builder.launch">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/mywebserver/Main.java">
+      <file leaf-file-name="UEB6Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB6Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="672">
+              <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -170,6 +153,12 @@
         <option value="$PROJECT_DIR$/src/uebungen/UEB5Impl.java" />
         <option value="$PROJECT_DIR$/src/uebungen/UEB6Impl.java" />
         <option value="$PROJECT_DIR$/src/mywebserver/UrlImpl.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test/mywebserver/web/url/TestHostUrlParser.java" />
+        <option value="$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB6Test.java" />
+        <option value="$PROJECT_DIR$/src/mywebserver/web/url/SimpleRegexParser.java" />
+        <option value="$PROJECT_DIR$/src/mywebserver/web/url/UserParser.java" />
+        <option value="$PROJECT_DIR$/src/mywebserver/web/url/ProtocolParser.java" />
       </list>
     </option>
   </component>
@@ -200,7 +189,41 @@
             </path>
             <path>
               <item name="MyWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BIF-SWE1" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="BIF-SWE1.UnitTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWebServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="BIF-WS18-SWE1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BIF-WS18-SWE1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BIF-WS18-SWE1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mywebserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BIF-WS18-SWE1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mywebserver" type="462c0819:PsiDirectoryNode" />
+              <item name="url" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BIF-WS18-SWE1" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyWebServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BIF-WS18-SWE1" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="url" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -210,13 +233,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/libs" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="mywebserver" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.Interfaces/src/BIF/SWE1/interfaces" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/mywebserver" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -230,12 +266,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestHostUrlParser.testSimpleHostParse">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestHostUrlParser.testSimpleHostParse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyWebServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mywebserver.web.url.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mywebserver.web.url" />
+      <option name="MAIN_CLASS_NAME" value="mywebserver.web.url.TestHostUrlParser" />
+      <option name="METHOD_NAME" value="testSimpleHostParse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="UEB1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BIF-SWE1.UnitTests" />
@@ -249,6 +308,29 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="BIF.SWE1.unittests" />
       <option name="MAIN_CLASS_NAME" value="BIF.SWE1.unittests.UEB1Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="UEB6Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BIF-SWE1.UnitTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BIF.SWE1.unittests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="BIF.SWE1.unittests" />
+      <option name="MAIN_CLASS_NAME" value="BIF.SWE1.unittests.UEB6Test" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -275,6 +357,16 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="MyWebServer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -415,19 +507,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MyWebServer" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
@@ -482,8 +561,15 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.UEB1Test" />
+      <item itemvalue="JUnit.TestHostUrlParser.testSimpleHostParse" />
+      <item itemvalue="JUnit.UEB6Test" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestHostUrlParser.testSimpleHostParse" />
+        <item itemvalue="JUnit.UEB6Test" />
         <item itemvalue="JUnit.UEB1Test" />
       </list>
     </recent_temporary>
@@ -495,20 +581,63 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474358994658</updated>
-      <workItem from="1537788076310" duration="638000" />
+      <workItem from="1537788076310" duration="3371000" />
     </task>
+    <task id="LOCAL-00001" summary="initial project setup">
+      <created>1537788724441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537788724442</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updated readme">
+      <created>1537788835503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537788835503</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UEB1Test - 2018.09.24 at 13h 27m 34s.xml">
+    <history-entry file="TestHostUrlParser_testSimpleHostParse - 2018.09.24 at 13h 44m 29s.xml">
+      <configuration name="TestHostUrlParser.testSimpleHostParse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestHostUrlParser_testSimpleHostParse - 2018.09.24 at 13h 45m 50s.xml">
+      <configuration name="TestHostUrlParser.testSimpleHostParse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestHostUrlParser_testSimpleHostParse - 2018.09.24 at 13h 45m 55s.xml">
+      <configuration name="TestHostUrlParser.testSimpleHostParse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestHostUrlParser_testSimpleHostParse - 2018.09.24 at 13h 46m 34s.xml">
+      <configuration name="TestHostUrlParser.testSimpleHostParse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestHostUrlParser_testSimpleHostParse - 2018.09.24 at 13h 47m 10s.xml">
+      <configuration name="TestHostUrlParser.testSimpleHostParse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UEB1Test - 2018.09.24 at 14h 01m 55s.xml">
       <configuration name="UEB1Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UEB1Test - 2018.09.24 at 14h 04m 34s.xml">
+      <configuration name="UEB1Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UEB6Test - 2018.09.24 at 14h 05m 01s.xml">
+      <configuration name="UEB6Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestHostUrlParser_testSimpleHostParse - 2018.09.24 at 14h 15m 37s.xml">
+      <configuration name="TestHostUrlParser.testSimpleHostParse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestHostUrlParser_testSimpleHostParse - 2018.09.24 at 14h 17m 25s.xml">
+      <configuration name="TestHostUrlParser.testSimpleHostParse" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="638000" />
+    <option name="totallyTimeSpent" value="3371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-42" width="3844" height="2153" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Tool Output" />
@@ -517,8 +646,8 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.4427521" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32983193" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.28834033" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32983193" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32983193" />
       <window_info anchor="right" id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22225186" />
@@ -527,7 +656,7 @@
       <window_info id="Learn" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968488" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -542,8 +671,51 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial project setup" />
+    <MESSAGE value="updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/mywebserver/web/url/TestHostUrlParser.java</url>
+          <line>13</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -760,21 +932,6 @@
     <entry file="file://$PROJECT_DIR$/MyWebServer.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mywebserver/UrlImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/AbstractTestFixture.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -789,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB1Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -803,13 +953,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/UrlImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="32">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mywebserver/UrlImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/BIF-SWE1-Interfaces.jar!/BIF/SWE1/interfaces/Url.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.Interfaces/src/BIF/SWE1/interfaces/Url.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mywebserver/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mywebserver/util/parser/ParseResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/BeforeClass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.12-sources.jar!/org/junit/BeforeClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/build.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB1Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/.externalToolBuilders/ant builder.launch">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB6Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/BIF-SWE1.UnitTests.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/UserParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/UrlParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/UrlImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/SimpleRegexParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/mywebserver/web/url/TestHostUrlParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mywebserver/web/url/ProtocolParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="11" column="72" lean-forward="true" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+          <folding>
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -865,12 +1161,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>MyWebServer</last-edited>
+          <last-edited>UnitTests|BIF-SWE1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
