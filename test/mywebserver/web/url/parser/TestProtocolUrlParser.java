@@ -1,11 +1,11 @@
-package mywebserver.web.url;
+package mywebserver.web.url.parser;
 
 import mywebserver.util.parser.ParseResult;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestHostUrlParser {
+public class TestProtocolUrlParser {
 
     @Test
     public void testSimpleHostParse() {

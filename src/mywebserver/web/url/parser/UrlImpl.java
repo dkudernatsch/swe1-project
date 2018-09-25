@@ -1,4 +1,4 @@
-package mywebserver.web.url;
+package mywebserver.web.url.parser;
 
 import java.net.MalformedURLException;
 import java.net.URI;

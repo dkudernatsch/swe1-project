@@ -1,9 +1,5 @@
-package mywebserver.web.url;
+package mywebserver.web.url.parser;
 
-import mywebserver.util.parser.ParseResult;
-import mywebserver.util.parser.Parser;
-
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ProtocolParser extends SimpleRegexParser {
