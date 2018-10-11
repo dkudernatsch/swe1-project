@@ -19,9 +19,9 @@ public class UrlParser implements Parser<URI> {
     public ParseResult<URI> parse(CharSequence input) {
 
         Parser<Tuple.Tuple7<
-                CharSequence,
                 Optional<CharSequence>,
-                CharSequence,
+                Optional<CharSequence>,
+                Optional<CharSequence>,
                 Optional<Integer>,
                 List<CharSequence>,
                 Optional<Map<String, String>>,
@@ -29,9 +29,9 @@ public class UrlParser implements Parser<URI> {
                 >
         parser =
             chain(
-                new ProtocolParser(),
+                opt(new ProtocolParser()),
                 opt(new UserParser()),
-                new HostParser(),
+                opt(new HostParser()),
                 opt(new PortParser()),
                 new PathParser(),
                 opt(new QueryParser()),

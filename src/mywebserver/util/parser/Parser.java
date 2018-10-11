@@ -48,7 +48,6 @@ public interface Parser<T> {
         };
     }
 
-
     public static <A, B> Parser<Tuple.Tuple2<A, B>> chain(Parser<A> p1, Parser<B> p2) {
         return input -> {
             ParseResult<Tuple.Tuple1<A>> r1 = chain(p1).parse(input);
@@ -97,7 +96,6 @@ public interface Parser<T> {
         };
     }
 
-
     public static <A, B, C, D, E> Parser<Tuple.Tuple5<A, B, C, D, E>> chain(Parser<A> p1, Parser<B> p2, Parser<C> p3, Parser<D> p4, Parser<E> p5) {
         return input -> {
             ParseResult<Tuple.Tuple4<A, B, C, D>> r1 = chain(p1, p2, p3, p4).parse(input);
@@ -113,7 +111,6 @@ public interface Parser<T> {
             }
         };
     }
-
 
     public static <A, B, C, D, E, F> Parser<Tuple.Tuple6<A, B, C, D, E, F>> chain(Parser<A> p1, Parser<B> p2, Parser<C> p3, Parser<D> p4, Parser<E> p5, Parser<F> p6) {
         return input -> {
