@@ -2,7 +2,6 @@ package uebungen;
 
 import java.io.InputStream;
 
-import mywebserver.UrlImpl;
 import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
 import BIF.SWE1.interfaces.UEB2;

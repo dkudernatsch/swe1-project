@@ -1,6 +1,8 @@
 package mywebserver.web.url;
 
 import BIF.SWE1.interfaces.Url;
+import mywebserver.util.parser.ParseResult;
+import mywebserver.web.url.parser.UrlParser;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -16,6 +18,24 @@ public class URI implements Url {
     private String[] segments;
     private Map<String, String> parameters;
     private String fragment;
+
+    public URI(String raw){
+        UrlParser p = new UrlParser();
+        ParseResult<URI> result = p.parse(raw);
+        if(result.success()){
+            URI parsed = result.getMatched();
+            this.inner = parsed.inner;
+            this.protocol = parsed.protocol;
+            this.username = parsed.username;
+            this.host = parsed.host;
+            this.port = parsed.port;
+            this.segments = parsed.segments;
+            this.parameters = parsed.parameters;
+            this.fragment = parsed.fragment;
+        }else{
+            throw new RuntimeException("Unable to parse Url");
+        }
+    }
 
     public URI(String inner,
                String protocol,
