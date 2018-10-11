@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.Interfaces/BIF-SWE1.Interfaces.iml" filepath="$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.Interfaces/BIF-SWE1.Interfaces.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.Interfaces/BIF-SWE1.Interfaces.iml" filepath="$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.Interfaces/BIF-SWE1.Interfaces.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/BIF-SWE1.UnitTests.iml" filepath="$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/BIF-SWE1.UnitTests.iml" />
       <module fileurl="file://$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/BIF-SWE1.UnitTests.iml" filepath="$PROJECT_DIR$/../unit-tests/BIF-SWE1/Java/BIF-SWE1.UnitTests/BIF-SWE1.UnitTests.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyWebServer.iml" filepath="$PROJECT_DIR$/MyWebServer.iml" />
     </modules>

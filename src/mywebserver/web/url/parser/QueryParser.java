@@ -16,15 +16,19 @@ public class QueryParser implements Parser<Map<String, String>> {
 
     @Override
     public ParseResult<Map<String, String>> parse(CharSequence input) {
+        if(input.charAt(0) == '?') {
+            input = input.subSequence(1, input.length());
+            ParseResult<List<Map.Entry<String, String>>> result = paramParser.many(input);
 
-        ParseResult<List<Map.Entry<String, String>>> result = paramParser.many(input);
-
-        if(result.success()){
-            Map<String, String> params = result.getMatched()
-                    .stream()
-                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-            return new ParseResult<>(params, result.getRemaining(), true);
-        } else {
+            if (result.success()) {
+                Map<String, String> params = result.getMatched()
+                        .stream()
+                        .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+                return new ParseResult<>(params, result.getRemaining(), true);
+            } else {
+                return new ParseResult<>(null, input, false);
+            }
+        }else {
             return new ParseResult<>(null, input, false);
         }
     }
