@@ -2,10 +2,11 @@ package mywebserver.web.url.parser;
 
 import mywebserver.util.parser.ParseResult;
 import mywebserver.util.parser.Parser;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Map;
+
+import static org.junit.Assert.*;
 
 public class QueryParserTest {
 
@@ -16,12 +17,12 @@ public class QueryParserTest {
 
         Parser<Map<String, String>> p = new QueryParser();
         ParseResult<Map<String, String>> result = p.parse(query);
-        Assertions.assertTrue(result.success());
-        Assertions.assertTrue(result.getMatched().keySet().contains("username"));
-        Assertions.assertTrue(result.getMatched().keySet().contains("password"));
-        Assertions.assertEquals("hello_kitty", result.getMatched().get("username"));
-        Assertions.assertEquals("yoloswaggins", result.getMatched().get("password"));
-        Assertions.assertEquals("", result.getRemaining());
+        assertTrue(result.success());
+        assertTrue(result.getMatched().keySet().contains("username"));
+        assertTrue(result.getMatched().keySet().contains("password"));
+        assertEquals("hello_kitty", result.getMatched().get("username"));
+        assertEquals("yoloswaggins", result.getMatched().get("password"));
+        assertEquals("", result.getRemaining());
     }
 
     @Test
@@ -31,12 +32,12 @@ public class QueryParserTest {
 
         Parser<Map<String, String>> p = new QueryParser();
         ParseResult<Map<String, String>> result = p.parse(query);
-        Assertions.assertTrue(result.success());
-        Assertions.assertTrue(result.getMatched().keySet().contains("username"));
-        Assertions.assertTrue(result.getMatched().keySet().contains("password"));
-        Assertions.assertEquals("hello_kitty", result.getMatched().get("username"));
-        Assertions.assertEquals("yoloswaggins", result.getMatched().get("password"));
-        Assertions.assertEquals("#yolo", result.getRemaining());
+        assertTrue(result.success());
+        assertTrue(result.getMatched().keySet().contains("username"));
+        assertTrue(result.getMatched().keySet().contains("password"));
+        assertEquals("hello_kitty", result.getMatched().get("username"));
+        assertEquals("yoloswaggins", result.getMatched().get("password"));
+        assertEquals("#yolo", result.getRemaining());
 
     }
 

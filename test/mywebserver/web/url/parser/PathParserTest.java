@@ -2,13 +2,14 @@ package mywebserver.web.url.parser;
 
 import mywebserver.util.parser.ParseResult;
 import mywebserver.util.parser.Parser;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertEquals;
+
 
 public class PathParserTest {
 

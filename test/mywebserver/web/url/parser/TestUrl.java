@@ -3,12 +3,11 @@ package mywebserver.web.url.parser;
 import mywebserver.util.parser.ParseResult;
 import mywebserver.util.parser.Parser;
 import mywebserver.web.url.URI;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import java.util.Collections;
 import java.util.HashMap;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 public class TestUrl {
 
@@ -46,7 +45,7 @@ public class TestUrl {
     }
 
     @Test
-    public void testUrlFailsOnMissingprotocol() {
+    public void testUrlFailsOnMissingProtocol() {
         Parser<URI> p = new UrlParser();
         ParseResult<URI> result = p.parse("www.orf.at/hello#world");
         assertFalse(result.success());
@@ -62,7 +61,7 @@ public class TestUrl {
     @Test
     public void testsUrlLocalhost(){
         Parser<URI> p = new UrlParser();
-        ParseResult<URI> result = p.parse("http://hello#world");
+        ParseResult<URI> result = p.parse("http://hello#w7e 2q09q3EṔ+Þ~3WRR3ßü9 r3ẞ9+EWF WF?) EQ=)(orld");
         assertFalse(result.success());
     }
 }

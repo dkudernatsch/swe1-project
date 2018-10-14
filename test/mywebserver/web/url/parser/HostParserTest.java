@@ -2,10 +2,10 @@ package mywebserver.web.url.parser;
 
 import mywebserver.util.parser.ParseResult;
 import mywebserver.util.parser.Parser;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class HostParserTest {
 

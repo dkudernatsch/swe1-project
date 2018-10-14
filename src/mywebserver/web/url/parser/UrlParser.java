@@ -23,17 +23,16 @@ public class UrlParser implements Parser<URI> {
                 Optional<CharSequence>,
                 Optional<CharSequence>,
                 Optional<Integer>,
-                List<CharSequence>,
+                Optional<List<CharSequence>>,
                 Optional<Map<String, String>>,
-                Optional<CharSequence>>
-                >
+                Optional<CharSequence>>>
         parser =
             chain(
                 opt(new ProtocolParser()),
                 opt(new UserParser()),
                 opt(new HostParser()),
                 opt(new PortParser()),
-                new PathParser(),
+                opt(new PathParser()),
                 opt(new QueryParser()),
                 opt(new FragmentParser())
             );
@@ -41,11 +40,11 @@ public class UrlParser implements Parser<URI> {
         return ParseResult.map(parser.parse(input), (t) ->
                 new URI(
                         input.toString(),
-                        t.first.toString(),
+                        t.first.orElse("").toString(),
                         t.second.orElse("").toString(),
-                        t.third.toString(),
+                        t.third.orElse("").toString(),
                         t.fourth.orElse(DEFAULT_PORT),
-                        t.fifth.stream().map(Object::toString).collect(Collectors.toList()).toArray(new String[0]),
+                        t.fifth.orElse(new ArrayList<>()).stream().map(Object::toString).collect(Collectors.toList()).toArray(new String[0]),
                         t.sixth.orElse(new HashMap<>()),
                         t.seventh.orElse("").toString()
                         ));
