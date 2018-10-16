@@ -2,9 +2,9 @@ package mywebserver.web.url.parser;
 
 import mywebserver.util.parser.ParseResult;
 import mywebserver.util.parser.Parser;
+import mywebserver.util.parser.SimpleRegexParser;
 
 import java.util.AbstractMap;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;

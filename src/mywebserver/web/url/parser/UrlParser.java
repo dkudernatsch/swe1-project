@@ -18,21 +18,13 @@ public class UrlParser implements Parser<URI> {
     @Override
     public ParseResult<URI> parse(CharSequence input) {
 
-        Parser<Tuple.Tuple7<
-                Optional<CharSequence>,
-                Optional<CharSequence>,
-                Optional<CharSequence>,
-                Optional<Integer>,
-                Optional<List<CharSequence>>,
+        Parser<Tuple.Tuple3<
+                List<CharSequence>,
                 Optional<Map<String, String>>,
                 Optional<CharSequence>>>
         parser =
             chain(
-                opt(new ProtocolParser()),
-                opt(new UserParser()),
-                opt(new HostParser()),
-                opt(new PortParser()),
-                opt(new PathParser()),
+                new PathParser(),
                 opt(new QueryParser()),
                 opt(new FragmentParser())
             );
@@ -40,13 +32,9 @@ public class UrlParser implements Parser<URI> {
         return ParseResult.map(parser.parse(input), (t) ->
                 new URI(
                         input.toString(),
-                        t.first.orElse("").toString(),
-                        t.second.orElse("").toString(),
-                        t.third.orElse("").toString(),
-                        t.fourth.orElse(DEFAULT_PORT),
-                        t.fifth.orElse(new ArrayList<>()).stream().map(Object::toString).collect(Collectors.toList()).toArray(new String[0]),
-                        t.sixth.orElse(new HashMap<>()),
-                        t.seventh.orElse("").toString()
+                        t.first.stream().map(Object::toString).collect(Collectors.toList()).toArray(new String[0]),
+                        t.second.orElse(new HashMap<>()),
+                        t.third.orElse("").toString()
                         ));
 
     }

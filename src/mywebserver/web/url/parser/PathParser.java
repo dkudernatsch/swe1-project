@@ -2,8 +2,8 @@ package mywebserver.web.url.parser;
 
 import mywebserver.util.parser.ParseResult;
 import mywebserver.util.parser.Parser;
+import mywebserver.util.parser.SimpleRegexParser;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 

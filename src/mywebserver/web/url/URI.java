@@ -12,10 +12,6 @@ import java.util.Optional;
 public class URI implements Url {
 
     private String inner = "";
-    private String protocol = "";
-    private String username = "";
-    private String host = "";
-    private Integer port = 80;
     private String[] segments = new String[]{};
     private Map<String, String> parameters = new HashMap<>();
     private String fragment = "";
@@ -27,10 +23,6 @@ public class URI implements Url {
             if (result.success()) {
                 URI parsed = result.getMatched();
                 this.inner = parsed.inner;
-                this.protocol = parsed.protocol;
-                this.username = parsed.username;
-                this.host = parsed.host;
-                this.port = parsed.port;
                 this.segments = parsed.segments;
                 this.parameters = parsed.parameters;
                 this.fragment = parsed.fragment;
@@ -41,37 +33,13 @@ public class URI implements Url {
     }
 
     public URI(String inner,
-               String protocol,
-               String username,
-               String host,
-               Integer port,
                String[] segments,
                Map<String, String> parameters,
                String fragment) {
         this.inner = inner;
-        this.protocol = protocol;
-        this.username = username;
-        this.host = host;
-        this.port = port;
         this.segments = segments;
         this.parameters = parameters;
         this.fragment = fragment;
-    }
-
-    public String getProtocol() {
-        return protocol;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public String getHost() {
-        return host;
-    }
-
-    public Integer getPort() {
-        return port;
     }
 
     public Map<String, String> getParameters() {

@@ -6,6 +6,7 @@ import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
 import BIF.SWE1.interfaces.UEB2;
 import BIF.SWE1.interfaces.Url;
+import mywebserver.web.url.URI;
 
 public class UEB2Impl implements UEB2 {
 
@@ -16,7 +17,7 @@ public class UEB2Impl implements UEB2 {
 
 	@Override
 	public Url getUrl(String s) {
-		return null;
+		return new URI(s);
 	}
 
 	@Override

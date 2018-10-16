@@ -1,4 +1,4 @@
-package mywebserver.web.url.parser;
+package mywebserver.util.parser;
 
 import mywebserver.util.parser.ParseResult;
 import mywebserver.util.parser.Parser;
