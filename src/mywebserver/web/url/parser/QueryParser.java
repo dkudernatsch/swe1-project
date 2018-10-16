@@ -16,7 +16,7 @@ public class QueryParser implements Parser<Map<String, String>> {
 
     @Override
     public ParseResult<Map<String, String>> parse(CharSequence input) {
-        if(input.charAt(0) == '?') {
+        if (input.length() >= 1 && input.charAt(0) == '?') {
             input = input.subSequence(1, input.length());
             ParseResult<List<Map.Entry<String, String>>> result = paramParser.many(input);
 
@@ -25,12 +25,10 @@ public class QueryParser implements Parser<Map<String, String>> {
                         .stream()
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
                 return new ParseResult<>(params, result.getRemaining(), true);
-            } else {
-                return new ParseResult<>(null, input, false);
             }
-        }else {
-            return new ParseResult<>(null, input, false);
         }
+        return new ParseResult<>(null, input, false);
+
     }
 
 

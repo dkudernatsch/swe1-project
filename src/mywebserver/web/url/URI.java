@@ -5,35 +5,38 @@ import mywebserver.util.parser.ParseResult;
 import mywebserver.web.url.parser.UrlParser;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
 public class URI implements Url {
 
-    private String inner;
-    private String protocol;
-    private String username;
-    private String host;
-    private Integer port;
-    private String[] segments;
-    private Map<String, String> parameters;
-    private String fragment;
+    private String inner = "";
+    private String protocol = "";
+    private String username = "";
+    private String host = "";
+    private Integer port = 80;
+    private String[] segments = new String[]{};
+    private Map<String, String> parameters = new HashMap<>();
+    private String fragment = "";
 
     public URI(String raw){
-        UrlParser p = new UrlParser();
-        ParseResult<URI> result = p.parse(raw);
-        if(result.success()){
-            URI parsed = result.getMatched();
-            this.inner = parsed.inner;
-            this.protocol = parsed.protocol;
-            this.username = parsed.username;
-            this.host = parsed.host;
-            this.port = parsed.port;
-            this.segments = parsed.segments;
-            this.parameters = parsed.parameters;
-            this.fragment = parsed.fragment;
-        }else{
-            throw new RuntimeException("Unable to parse Url");
+        if(raw != null) {
+            UrlParser p = new UrlParser();
+            ParseResult<URI> result = p.parse(raw);
+            if (result.success()) {
+                URI parsed = result.getMatched();
+                this.inner = parsed.inner;
+                this.protocol = parsed.protocol;
+                this.username = parsed.username;
+                this.host = parsed.host;
+                this.port = parsed.port;
+                this.segments = parsed.segments;
+                this.parameters = parsed.parameters;
+                this.fragment = parsed.fragment;
+            } else {
+                throw new RuntimeException("Unable to parse Url");
+            }
         }
     }
 
@@ -77,7 +80,7 @@ public class URI implements Url {
 
     @Override
     public String getPath() {
-        return Arrays.stream(segments).reduce((s1, s2) -> s1 + "/" + s2).orElse("");
+        return Arrays.stream(segments).reduce("", (s1, s2) -> s1 + "/" + s2);
     }
 
     @Override

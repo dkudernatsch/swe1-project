@@ -64,4 +64,14 @@ public class TestUrl {
         ParseResult<URI> result = p.parse("http://hello#w7e 2q09q3EṔ+Þ~3WRR3ßü9 r3ẞ9+EWF WF?) EQ=)(orld");
         assertFalse(result.success());
     }
+
+    @Test
+    public void testsUrlOnlyPath(){
+        Parser<URI> p = new UrlParser();
+        ParseResult<URI> result = p.parse("/test.jpeg");
+        assertTrue(result.success());
+        assertEquals("/test.jpeg", result.getMatched().getPath());
+    }
+
+
 }
