@@ -17,6 +17,7 @@ public class UEB2Impl implements UEB2 {
 
 	@Override
 	public Url getUrl(String s) {
+		//TODO: don't use ctor for this
 		return new URI(s);
 	}
 
