@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class QueryParser implements Parser<Map<String, String>> {
 
-    private static ParamParser paramParser = new ParamParser();
+    private static final ParamParser paramParser = new ParamParser();
 
     @Override
     public ParseResult<Map<String, String>> parse(CharSequence input) {

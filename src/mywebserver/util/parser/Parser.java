@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Function;
 
 public interface Parser<T> {
 
@@ -21,7 +22,7 @@ public interface Parser<T> {
                 currentInput = result.getRemaining();
             }
 
-        } while (result.success());
+        } while (result.success() && currentInput.length() > 0);
         if (pathSegments.size() > 0) {
             return new ParseResult<>(pathSegments, result.getRemaining(), true);
         } else {
@@ -29,6 +30,9 @@ public interface Parser<T> {
         }
     }
 
+    default <R> Parser<R> map(Function<T,R> fn) {
+        return input -> ParseResult.map(this.parse(input), fn);
+    }
 
     public static <A> Parser<Optional<A>> opt(Parser<A> p) {
         return input -> {

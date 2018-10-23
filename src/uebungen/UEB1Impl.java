@@ -8,6 +8,7 @@ public class UEB1Impl implements UEB1 {
 
 	@Override
 	public Url getUrl(String path) {
+
 		return new URI(path);
 	}
 

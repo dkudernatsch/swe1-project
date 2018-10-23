@@ -9,10 +9,8 @@ import java.util.regex.Pattern;
 
 public class HttpVersionParser implements Parser<HttpVersion> {
 
-    private static final Parser<CharSequence> httpVersionExtractor = new SimpleRegexParser(
-            Pattern.compile("HTTP/(?<version>[^\\s]+)"),
-            "version"
-    ) {};
+    private static final Parser<CharSequence> httpVersionExtractor
+            = new SimpleRegexParser(Pattern.compile("\\s*HTTP\\/(?<version>[^(\\n)]+)"), "version") {};
 
     @Override
     public ParseResult<HttpVersion> parse(CharSequence input) {

@@ -44,5 +44,13 @@ public class TestUrl {
         assertEquals("/test.jpeg", result.getMatched().getPath());
     }
 
+    @Test
+    public void testsRootPath(){
+        Parser<URI> p = new UrlParser();
+        ParseResult<URI> result = p.parse("/ HTTP/1.1");
+        assertTrue(result.success());
+        assertEquals("/", result.getMatched().getPath());
+
+    }
 
 }

@@ -65,4 +65,15 @@ public class PathParserTest {
         assertEquals("?a=b&b=c#yolo", result.getRemaining());
     }
 
+    @Test
+    public void testOnlyRootPath(){
+
+        String path = "/    ";
+
+        Parser<List<CharSequence>> p = new PathParser();
+        ParseResult<List<CharSequence>> result = p.parse(path);
+
+        assertTrue(result.success());
+    }
+
 }

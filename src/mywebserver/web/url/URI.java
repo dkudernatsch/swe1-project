@@ -7,14 +7,14 @@ import mywebserver.web.url.parser.UrlParser;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 public class URI implements Url {
 
-    private String inner = "";
-    private String[] segments = new String[]{};
+    private String              inner      = "";
+    private String[]            segments   = new String[]{};
     private Map<String, String> parameters = new HashMap<>();
-    private String fragment = "";
+    private String              fragment   = "";
+
 
     public URI(String raw){
         if(raw != null) {
@@ -53,7 +53,7 @@ public class URI implements Url {
 
     @Override
     public String getRawUrl() {
-        return inner;
+        return "".equals(inner) ? "/" : inner;
     }
 
     @Override
