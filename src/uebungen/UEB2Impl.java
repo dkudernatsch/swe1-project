@@ -11,6 +11,7 @@ import BIF.SWE1.interfaces.UEB2;
 import BIF.SWE1.interfaces.Url;
 import mywebserver.util.parser.ParseResult;
 import mywebserver.util.parser.Parser;
+import mywebserver.web.http.HttpResponse;
 import mywebserver.web.http.InvalidRequest;
 import mywebserver.web.http.parser.RequestParser;
 import mywebserver.web.url.URI;
@@ -56,6 +57,6 @@ public class UEB2Impl implements UEB2 {
 
 	@Override
 	public Response getResponse() {
-		return null;
+		return new HttpResponse();
 	}
 }
