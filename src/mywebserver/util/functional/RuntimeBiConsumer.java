@@ -1,15 +1,17 @@
 package mywebserver.util.functional;
 
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-public interface RuntimeConsumer<T> extends Consumer<T> {
+@FunctionalInterface
+public interface RuntimeBiConsumer<T,U> extends BiConsumer<T,U> {
 
-    void acceptEx(T t) throws Exception;
+    void acceptEx(T t, U u) throws Exception;
 
     @Override
-    default void accept(T t) {
+    default void accept(T t, U u) {
         try {
-            acceptEx(t);
+            acceptEx(t, u);
         }catch (Exception e){
             throw new RuntimeException("Inner: " + e.getMessage(), e);
         }

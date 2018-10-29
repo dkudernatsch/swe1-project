@@ -2,13 +2,12 @@ package mywebserver.web.http;
 
 import BIF.SWE1.interfaces.Response;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import mywebserver.util.functional.RuntimeBiConsumer;
 
 public class HttpResponse implements Response {
 
@@ -18,7 +17,7 @@ public class HttpResponse implements Response {
     private int contentLength;
     private byte[] content;
 
-    private int statusCode = 200;
+    private HttpStatusCode statusCode;
 
     @Override
     public Map<String, String> getHeaders() {
@@ -27,7 +26,7 @@ public class HttpResponse implements Response {
 
     @Override
     public int getContentLength() {
-        return 0;
+        return contentLength;
     }
 
     @Override
@@ -42,17 +41,24 @@ public class HttpResponse implements Response {
 
     @Override
     public int getStatusCode() {
-        return statusCode;
+        if(statusCode != null)
+            return statusCode.getCode();
+        else throw new RuntimeException("Status code was not set!");
     }
 
     @Override
     public void setStatusCode(int status) {
-        this.statusCode = status;
+        this.statusCode = HttpStatusCode.fromCode(status);
+    }
+
+    public HttpResponse withStatus(int status){
+        this.statusCode = HttpStatusCode.fromCode(status);
+        return this;
     }
 
     @Override
     public String getStatus() {
-        return null;
+        return statusCode.toString();
     }
 
     @Override
@@ -82,6 +88,11 @@ public class HttpResponse implements Response {
         this.content = content;
     }
 
+    public HttpResponse withContent(String content){
+        setContent(content);
+        return this;
+    }
+
     @Override
     public void setContent(InputStream stream) {
 
@@ -89,6 +100,18 @@ public class HttpResponse implements Response {
 
     @Override
     public void send(OutputStream network) {
+        try {
+            network.write("HTTP 1.1 ".getBytes());
+            network.write(this.statusCode.toString().getBytes());
+            network.write("\n".getBytes());
+            headers.forEach(
+                    (RuntimeBiConsumer) (k, v) -> network.write( (k + ": " + v + "\n").getBytes() )
+            );
+            network.write("\n".getBytes());
+            network.write(content);
+        }catch (IOException e){
+            throw new RuntimeException("THIS IS STUPID");
+        }
 
     }
 
