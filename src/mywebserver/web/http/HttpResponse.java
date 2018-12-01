@@ -110,7 +110,7 @@ public class HttpResponse implements Response {
             network.write("\n".getBytes());
             network.write(content);
         }catch (IOException e){
-            throw new RuntimeException("THIS IS STUPID");
+            throw new RuntimeException("THIS IS STUPID", e);
         }
 
     }
